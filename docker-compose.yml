@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  snx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./resources:/opt/app
+      - /lib/modules:/lib/modules
+    cap_add:
+      - ALL
+    environment:
+      - TZ=Estonia/Tallinn
+      - SNX_SERVER=""
+      - SNX_USERNAME=""
+      - SNX_PASSWORD=""
