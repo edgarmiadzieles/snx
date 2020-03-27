@@ -5,7 +5,7 @@ RUN apt update -y
 RUN DEBIAN_FRONTEND="noninteractive" apt install \
     libcap2-bin g++ make git ssh libstdc++5:i386 libpam0g:i386 \
     tcpdump libx11-6:i386 bzip2 kmod expect iptables \
-    net-tools iputils-ping iproute2 tmux vim -y
+    net-tools iputils-ping iproute2 tmux vim curl -y
 
 WORKDIR /opt/app
 
