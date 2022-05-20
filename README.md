@@ -6,4 +6,7 @@ Remove the env variables and entrypoint.sh in case of security concerns.
 Some packages installed solely for debugging purposes.
 
 ### Usage
+In the directory run:
+```shell
 docker-compose up
+```
